@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: none;
+  /* overflow: hidden; */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.navbar img {
+  margin-left: 2rem;
+}
+.links {
+  padding-left: 4rem;
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  background-color: rgba(
+    223,
+    218,
+    218,
+    0.3
+  ); /* Add a semi-transparent background color to the blurred area */
+  border-radius: 10px 0px 0px 10px;
+  opacity: 0.7;
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  padding-right: 5%;
+  color: white;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin-block: 0px;
+  padding-block: 1rem;
+}
+.links span {
+  font-weight: bolder;
+  color: white;
+  opacity: 1;
+  margin-right: 5px;
+}
+
+.homepage {
+  color: white;
+  display: flex;
+  margin-top: 150px;
+  margin-inline: 15%;
+}
+.hometext h1 {
+  font-size: 100px;
+  margin-block: 0rem;
+  font-weight: 100;
+  margin-block: 3rem;
+}
+
+.active {
+  border-bottom: 2px solid rgb(247, 240, 240);
+}
+
+.hometext {
+  width: 50%;
+}
+
+hr {
+  color: rgb(39, 36, 36);
+  width: 550px;
+  height: 0.1px;
+  opacity: 0.3;
+  margin-top: 1.5rem;
+  margin-right: -5rem;
+}
+
+.explore {
+  background-color: white;
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+  height: fit-content;
+  padding: 8%;
+  margin-top: 20%;
+  margin-left: 25%;
+  border-radius: 1000rem;
+}
+
+.descontainer {
+  color: white;
+  display: flex;
+  height: 85vh;
+  margin-inline: 10%;
+}
+
+.part1 {
+  width: 120%;
+  /* padding-top: 4%; */
+}
+
+.part1 h1 {
+  font-size: 30px;
+  padding-top: 10%;
+  text-transform: uppercase;
+}
+
+.part2 {
+  margin-top: 10%;
+
+  height: fit-content;
+}
+
+.marslogo {
+  padding-bottom: 15%;
+}
+
+.nestednav {
+  padding-left: 40%;
+  text-decoration: none;
+}
+
+.nav ul {
+  padding: 0px;
+  display: flex;
+  list-style: none;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: end;
+  margin-left: 27%;
+  padding-top: 70px;
+}
+.nav ul li {
+  padding-block: 0.8rem;
+  cursor: pointer;
+  margin-inline: 1rem;
+}
+
+.distancetime {
+  border-top: solid rgb(77, 70, 70) 1px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20%;
+  padding-top: 1.5rem;
+  margin-top: 50px;
+}
+.marsabout {
+  display: flex;
+}
+
+.marsintrocon {
+  padding-left: 30%;
+  /* margin-top: 25%; */
+}
+.marsintrocon h1 {
+  font-size: 70px;
+  font-weight: lighter;
+}
+
+.crew {
+  color: white;
+  height: 85vh;
+  padding-inline: 10%;
+}
+
+.crewmember {
+  display: inline-block;
+  margin-top: 5%;
+  align-items: center;
+  height: 70%;
+}
+
+.App {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.swipe {
+  animation: heading;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  color: white;
+}
+
+@keyframes heading {
+  0% {
+    left: -100px; opacity: 0.5;
+  }
+  25%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.25;
+  }
+  
+  100% {
+    opacity: 0;
+    left: -120%;
+  }
+}
+
+.sipe {
+  height: 300px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.crewrender {
+  margin-inline: 10%;
+  color: aliceblue;
+  margin-top: 5%;
+}
+
+.crewrender h1{
+  opacity: 0.9;
+}
+
+.crewrender h1 span, .marslogo span{
+  opacity: 0.5;
+}
+
+
+.slide {
+  animation: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  color: white;
+}
+@keyframes slide {
+  0% {
+    right: -120%;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+
+.about {
+  width: 50%;
+}
+.about h1 {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  padding-block: 2rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.about h2 {
+  opacity: 0.5;
+
+  text-transform: uppercase;
+}
+
+.about p {
+  line-height: 2rem;
+  padding-inline-end: 9rem;
+  opacity: 0.6;
+}
+.sipe img {
+  position: relative;
+  top: -20px;
+}
+
+.espan {
+  padding: 0.2rem;
+  background-color: white;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.activeespan {
+  opacity: 1;
+}
+
+.techrender{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-inline-start: 10%;
+}
+
+.techrender  .h1{
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.techrender h1{
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.over{
+  margin-left: -4rem;
+  padding-top: 4rem;
+  font-size: 35px;
+  opacity: 0.8;
+}
+
+.techrender span{
+  opacity: 0.7;
+}
+
+.techsec{
+  display: flex
+  
+  ;
+  justify-content: center;
+  align-items: center;
+}
+
+.technav div{
+  cursor: pointer;
+  padding:1rem;
+  margin: 30px;
+  border: solid white 1px;
+  border-radius: 2rem;
+}
+
+.technavactive{
+  color: black;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.technav{
+  height: 100%;
+  padding-top: 5rem;
+}
+
+.desc p{
+  padding-block: 1rem;
+  padding-right: 40%;
+  line-height: 1.5rem;
+  opacity: 0.8;
+}
+
+.techsec img{
+  margin-block: 1rem;
+  opacity: 0.9;
+}
+
